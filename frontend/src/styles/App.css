@@ -1,0 +1,193 @@
+/* Base styles */
+.App {
+  text-align: center;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.loading-message {
+  color: #007bff;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Article container with fixed height */
+.article-container {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Set a fixed minimum height */
+}
+
+/* Responsive styles for small mobile devices (e.g., iPhone SE) */
+@media (max-width: 320px) {
+  .App-header {
+    padding: 10px;
+  }
+
+  .App-header h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+/* Responsive styles for larger mobile devices (e.g., iPhone 8, Galaxy S) */
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  .main {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    margin-top: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+
+/* Responsive styles for tablets (e.g., iPad) */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 15px;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+/* Responsive styles for laptops */
+@media (max-width: 1024px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  .App-header h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="text"] {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  button {
+    width: auto;
+  }
+}
+
+
+/* Responsive styles for desktops */
+@media (min-width: 1025px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  .App-header h1 {
+    font-size: 3rem;
+  }
+
+  input[type="text"], button {
+    width: auto;
+    margin-right: 10px;
+  }
+}
